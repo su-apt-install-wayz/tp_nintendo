@@ -1,0 +1,80 @@
+@import url('init.css');
+
+.sidebar {
+    position: fixed;
+    z-index: 99;
+    top: 72px;
+    left: 0;
+    width: 88px;
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--c-primary-color);
+}
+
+.side_item {
+    width: 88px;
+    height: 88px;
+    border-top: solid 1px var(--c-border);
+    border-right: solid 1px var(--c-border);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 75%;
+    color: var(--c-white);
+    text-align: center;
+    position: relative;
+}
+
+.side_item span {
+    font-size: 37px;
+}
+
+.side_item:hover {
+    background: var(--c-secondary-color);
+}
+
+.side_item.first {
+    border-top: none;
+}
+
+.side_item.more {
+    height: 64px;
+}
+
+.side_item.last {
+    margin: auto 0 0 0;
+    background: var(--c-border);
+    border: none;
+    justify-content: end;
+    padding: 0;
+}
+
+.side_item.last .goToTop {
+    width: 28px;
+    height: 28px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: var(--c-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--c-border);
+}
+
+.side_item.last .goToTop span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.side_item span.corner {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    transform: rotate(-45deg);
+    color: #6f0009;
+    font-size: 30px;
+}
