@@ -10,8 +10,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--c-primary-color);
-    border-bottom: solid 1px var(--c-border);
+    background-color: var(--c-background);
+    border-bottom: solid 1px var(--c-dark-grey);
 }
 
 nav {
@@ -35,7 +35,7 @@ nav {
 }
 
 .logo img {
-    width: 100%;
+    width: 50%;
 }
 
 ul.nav_list {
@@ -57,13 +57,13 @@ ul.nav_list a {
     justify-content: center;
     align-items: center;
     font-size: 11px;
-    color: var(--c-white);
+    color: var(--c-text-color);
     position: relative;
     cursor: pointer;
 }
 
 ul.nav_list a span {
-    color: var(--c-white);
+    color: var(--c-text-color);
     font-size: 37px;
 }
 

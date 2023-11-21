@@ -16,13 +16,23 @@ svg {
 }
 
 :root {
-    --c-primary-color: #e60012;
+    /* --c-primary-color: #e60012;
     --c-secondary-color: #d10000;
 
     --c-background: #f4f4f4;
     --c-white: #fff;
     --c-black: #000;
-    --c-border: #bf0010;
+    --c-border: #bf0010; */
+
+    --c-primary-color: #AEFF01;
+    --c-secondary-color: #4546B2;
+
+    --c-background: #0D0D0D;
+    --c-card: #131313;
+    --c-text-color: #fff;
+    --c-grey: #727272;
+    --c-dark-grey: #9191910c;
+    --c-footer: #e4e4e4;
 }
 
 html {

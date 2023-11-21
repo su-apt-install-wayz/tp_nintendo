@@ -27,15 +27,8 @@
 
 .gallery_item {
     width: 100%;
-    transition: all 0.3s ease;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.gallery_item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 12px rgba(0,0,0,.3);
-    transition: all 0.5s ease;
 }
 
 .gallery_item img {
@@ -109,7 +102,7 @@
     display: flex;
     width: 100%;
     padding: 1rem;
-    background: #fff;
+    background: var(--c-dark-grey);
     gap: 10px;
     cursor: pointer;
 }
@@ -117,6 +110,7 @@
 .news ul li h2 {
     margin-left: 10px;
     position: relative;
+    color: var(--c-text-color);
 }
 
 .news ul li h2::after {
@@ -126,12 +120,12 @@
     left: -10px;
     width: 4px;
     height: 100%;
-    background: var(--c-background);
+    background: var(--c-secondary-color);
 }
 
 .news ul li a {
     margin: auto 0 auto auto;
-    color: var(--c-black);
+    color: var(--c-text-color);
     position: relative;
     display: flex;
     justify-content: center;
@@ -140,8 +134,9 @@
     font-weight: 600;
 }
 
-.news ul li a span {
+.news ul li span {
     font-size: 20px;
+    color: var(--c-primary-color);
 }
 
 .news ul li a:hover {
@@ -163,7 +158,7 @@
 }
 
 .news ul li .description h3 {
-    color: var(--c-black);
+    color: var(--c-text-color);
     font-size: 15px;
 }
 
@@ -172,7 +167,7 @@
 }
 
 .news ul li .description p {
-    color: #666;
+    color: var(--c-grey);
     font-size: 13px;
     line-height: 1.5em;
 }
@@ -190,4 +185,23 @@
     .news {
         max-width: none;
     }
+}
+
+.matheo_gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.matheo_gallery .matheo_gallery_item {
+    width: 100%;
+}
+
+.matheo_gallery .matheo_gallery_item img {
+    width: 100%;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+    border-radius: 6px;
 }

@@ -12,9 +12,18 @@
 
 <body>
 
+    <figure>
+        <audio id="myaudio" loop autoplay src="./ressources/never-gonna-give-you-up.mp3"></audio>
+    </figure>
+
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.02;
+    </script>
+
     <header>
         <nav>
-            <div class="logo" onclick="location.href='index.html';"><img src="./ressources/logo.png" alt=""></div>
+            <div class="logo" onclick="location.href='/tp_nintendo/index.html';"><img src="https://wustenberghs-theo.fr/ressources/logo.png" alt=""></div>
 
             <ul class="nav_list" id="nav_list">
                 <a href='#'>
@@ -93,26 +102,26 @@
         <div class="content">
             <div class="gallery">
                 <div class="gallery_row">
-                    <div class="gallery_item one"><img
+                    <div class="gallery_item one" onclick="location.href='./pages/matheo.html'"><img
                             src="https://wallpapers.com/images/hd/black-bugatti-chiron-car-iphone-pppn7i1brvyg0g3z.jpg"
                             alt=""></div>
-                    <div class="gallery_item"><img src="https://i.redd.it/hh476vlks8ia1.jpg" alt=""></div>
-                    <div class="gallery_item"><img src="https://www.turbo.fr/sites/default/files/2022-04/Toyota_0.jpeg"
+                    <div class="gallery_item"><img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" alt=""></div>
+                    <div class="gallery_item"><img src="https://media3.giphy.com/media/PgJwMLahrGc3IcteOt/giphy.gif"
                             alt=""></div>
                     <div class="gallery_item four"><img
-                            src="https://gaming-cdn.com/images/products/14756/orig/the-crew-motorfest-xbox-series-x-s-xbox-series-x-s-jeu-microsoft-store-cover.jpg?v=1694684544"
+                            src="https://media.tenor.com/xtXONS0VR3YAAAAC/singe-monkey.gif"
                             alt=""></div>
                 </div>
 
                 <div class="gallery_row">
                     <div class="gallery_item five"><img
-                            src="https://fs-prod-cdn.nintendo-europe.com/media/downloads/country_support_4/fr_23/1X1_MNS_DETECTIVE_PIKACHU_PACK.jpg" alt="">
+                            src="https://media.tenor.com/KNkJ4cXzQG4AAAAC/7eme-compagnie-pithivier.gif" alt="">
                     </div>
                     <div class="gallery_item six"><img
                             src="https://cdn2.unrealengine.com/fortnite-chapter-4-og-overview-page-key-art-bg-1920x1080-1fbc3a1c0297.jpg"
                             alt=""></div>
                     <div class="gallery_item seven"><img
-                            src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_MarioKart8Deluxe_BoosterCoursePass_OutNow_Wave6_FR_fr_image600w.jpg"
+                            src="https://i.pinimg.com/originals/ac/d3/3a/acd33afe34e7e329e7e6ab02a8b60efb.gif"
                             alt=""></div>
                 </div>
 
@@ -127,25 +136,30 @@
                             src="https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/1x1_NSwitch_SuperMarioRPG_OutNow_FR_fr_image600w.jpg"
                             alt=""></div>
                 </div>
-
-                <div class="gallery_row">
-                    <div class="gallery_item eleven"><img
-                            src="https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/games_18/smart_device_6/1x1_SmartDevice_SuperMarioRun_image600w.jpg"
-                            alt=""></div>
-                    <div class="gallery_item twelve"><img
-                            src="https://www.automobile-magazine.fr/asset/cms/840x394/170760/config/119561/200826-civic-type-r-limited-edition.jpg"
-                            alt=""></div>
-                    <div class="gallery_item thirteen"><img
-                            src="https://fs-prod-cdn.nintendo-europe.com/media/images/12_vertical_images/others_5/nintendo_eshop_9/2x1_eShop_BlackFridaySale2023_FRfr_image600w.jpg"
-                            alt=""></div>
-                    <div class="gallery_item fourteen"><img
-                            src="https://wave.fr/images/1916/11/valorant-jeu-riot-games.jpg" alt=""></div>
-                </div>
             </div>
+
+            <script src="./js/vanilla-tilt.babel.min.js"></script>
+            <script>
+                VanillaTilt.init(document.querySelectorAll(".gallery_row .gallery_item"), {
+                  max: 5,
+                  speed: 400
+                }); 
+            </script>
+
+
+
             <div class="news">
                 <ul>
                     <li>
                         <h2>Dernières News</h2>
+                    </li>
+                    <li>
+                        <img src="./ressources/mastermind.JPG" alt="">
+                        <div class="description" onclick="location.href='https://su-apt-install-wayz.github.io/mastermind/';">
+                            <h3>Mon jeu Mastermind</h3>
+                            <p>21/11/2023 | Desktop</p>
+                            <p>Découvrez mon jeu Mastermind</p>
+                        </div>
                     </li>
                     <li>
                         <img src="https://fs-prod-cdn.nintendo-europe.com/media/images/11_square_images/others_4/nintendo_eshop_6/weekly_download_news/1x1_WeeklyDownloadNews_20231116_frFR_image950w.jpg" alt="">
