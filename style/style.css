@@ -1,6 +1,7 @@
 @import url('init.css');
 @import url('navbar.css');
 @import url('sidebar.css');
+@import url('footer.css');
 
 .content {
     margin: 0 auto;
